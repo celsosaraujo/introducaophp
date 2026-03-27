@@ -78,7 +78,7 @@
                 }
             }
 
-
+            $salarioliquido = $salariobruto - $descontototal;
             echo "Salário Bruto: " . number_format($salariobruto, 2, '.', '') . 
                 " Desconto INSS: " . number_format($descontototal, 2, '.', '') . 
                 " Salário Líquido: " . number_format($salarioliquido, 2, '.', '');
