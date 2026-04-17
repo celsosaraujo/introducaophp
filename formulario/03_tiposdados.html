@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Filme</title>
+</head>
+<body>
+
+<h2>Cadastro de Filme</h2>
+
+<form method="POST" enctype="multipart/form-data" action="03_tiposdados.php">
+
+    Nome do Filme:<br>
+    <input type="text" name="nome"><br><br>
+
+    Código de Acesso:<br>
+    <input type="password" name="senha"><br><br>
+    
+    E-mail do responsável:<br>
+    <input type="email" name="email"><br><br>
+    
+    Telefone:<br>
+    <input type="tel" name="telefone"><br><br>
+
+    Link do Trailer:<br>
+    <input type="url" name="trailer"><br><br>
+
+    Buscar Filme:<br>
+    <input type="search" name="busca"><br><br>
+
+    Duração (minutos):<br>
+    <input type="number" name="duracao"><br><br>
+
+    Classificação (0 a 10):<br>
+    <input type="range" name="classificacao" min="0" max="10" oninput="valor.value=this.value">
+    <output name="valor">5</output><br><br>
+
+    Data de Lançamento:<br>
+    <input type="date" name="data_lancamento"><br><br>
+
+    Horário da Sessão:<br>
+    <input type="time" name="hora"><br><br>
+
+    Data e Hora da Estreia:<br>
+    <input type="datetime-local" name="data_hora"><br><br>
+
+    Mês de Referência:<br>
+    <input type="month" name="mes"><br><br>
+
+    Semana de Lançamento:<br>
+    <input type="week" name="semana"><br><br>
+
+    Cor Tema:<br>
+    <input type="color" name="cor"><br><br>
+
+    Imagem de Capa:<br>
+    <input type="file" name="capa"><br><br>
+
+    Tipo:<br>
+    <input type="radio" name="tipo" value="Romance"> Romance<br>
+    <input type="radio" name="tipo" value="Comedia"> Comédia<br><br>
+
+    Gêneros:<br>
+    <input type="checkbox" name="generos[]" value="Ação"> Ação<br>
+    <input type="checkbox" name="generos[]" value="Drama"> Drama<br>
+    <input type="checkbox" name="generos[]" value="Terror"> Terror<br><br>
+
+    Faixa Etária:<br>
+    <select name="faixa_etaria">
+        <option value="">Selecione</option>
+        <option value="Livre">Livre</option>
+        <option value="10">10 anos</option>
+        <option value="12">12 anos</option>
+        <option value="14">14 anos</option>
+        <option value="16">16 anos</option>
+        <option value="18">18 anos</option>
+    </select><br><br>
+
+    Sinopse:<br>
+    <textarea name="sinopse" rows="5" cols="40"></textarea><br><br>
+
+    <input type="hidden" name="id_filme" value="1">
+
+    <input type="button" value="Botão Exemplo"><br><br>
+
+    <input type="reset" value="Limpar">
+
+    <input type="submit" value="Cadastrar">
+
+</form>
+
+</body>
+</html>
