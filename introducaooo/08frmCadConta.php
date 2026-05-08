@@ -48,11 +48,18 @@
         // $contas[] = $contaObj;
         // $_SESSION[$contas][] = $contaObj;
 
-        echo "<h3>Extrato da Conta</h3>";
-        foreach ($_SESSION["contas"] as $v_conta) {
-            $v_conta->imprimeExtrato();
-            echo "<br>";
-        }
+        // echo "<h3>Extrato da Conta</h3>";
+        // foreach ($_SESSION["contas"] as $v_conta) {
+        //     $v_conta->imprimeExtrato();
+        //     echo "<br>";
+        // }
+
+        echo '<br>
+               <h2>Conta Cadastrada com Sucesso!!!</h2> 
+               <br>
+               <a href="08menu.html">                
+                    <button>Voltar ao Menu</button>
+               </a>';
     }
     ?>
 
