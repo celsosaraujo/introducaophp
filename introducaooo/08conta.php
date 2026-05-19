@@ -48,6 +48,10 @@
          $this->movimentacao[] = $item;
       }
 
+      public function contaFormatada(){
+         return $this-> tipoDeConta . ' - Agência: ' . $this-> agencia . ' Conta: ' . $this-> conta;
+      }
+
       abstract public function calculaSaldo();
    }
 

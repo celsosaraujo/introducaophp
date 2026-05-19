@@ -45,6 +45,12 @@
             exit;
         }
 
+        setcookie(
+            "ultimaConta",
+           count($_SESSION["contas"]) - 1,
+            time() + 3600
+        );
+
         // $contas[] = $contaObj;
         // $_SESSION[$contas][] = $contaObj;
 
